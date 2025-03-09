@@ -1,0 +1,1 @@
+A lightweight wrapper around an asyncio TCP connection that transforms a byte stream into a stream of Python data. Designed as a foundational building block for distributed systems.
