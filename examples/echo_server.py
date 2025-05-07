@@ -12,7 +12,7 @@ async def handle_connection(connection: Connection):
             await connection.close()
             break
         counter += 1
-        await connection.send(message)
+        await connection.send(f"server replied: {message}")
 
 
 async def main():
