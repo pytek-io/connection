@@ -2,6 +2,10 @@
 [![CI](https://github.com/pytek-io/smart-connection/actions/workflows/ci.yml/badge.svg)](https://github.com/pytek-io/smart-connection/actions)
 [![Test suite](https://github.com/pytek-io/smart-connection/actions/workflows/test-suite.yml/badge.svg)](https://github.com/pytek-io/smart-connection/actions)
 
+<a href="https://pypi.org/project/smart-connection" target="_blank">
+<img src="https://img.shields.io/pypi/v/smart-connection?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+
 # Smart Connection
 
 ## What is it?
