@@ -1,3 +1,6 @@
+[![Coverage](https://codecov.io/gh/pytek-io/async-stream-processing/branch/main/graph/badge.svg)](https://codecov.io/gh/pytek-io/smart-connection)
+[![CI](https://github.com/pytek-io/smart-connection/actions/workflows/ci.yml/badge.svg)](https://github.com/pytek-io/smart-connection/actions)
+
 # Smart Connection
 
 ## What is it?
@@ -7,7 +10,7 @@ Smart Connection (SC) is a a lightweight wrapper around asyncio TCP connection f
 ## Main features
 
 ### Exchange message, not bytes
-In contrast to TCP, which is a stream-oriented protocol, SC is a message-based protocol. This means that SC guarantees the delivery of each message as a distinct unit and in the correct order. In practice, each message is encapsulated within a frame that ensures its integrity. The protocol is simple and can be easily implemented in any modern programming language.
+In contrast to TCP, which is a stream-oriented protocol, SC is a message-based protocol. This means that SC guarantees the delivery of each message as a distinct unit and in the correct order. In practice, each message is encapsulated within a frame that ensures its integrity. The protocol is simple and can be easily implemented in any other modern programming language.
 
 ### User friendly API
 Users can send and receive messages directly. Serialization and deserialization are handled transparently by the library. Messages can be received from a connection object using an async for loop, allowing for elegant user code.
