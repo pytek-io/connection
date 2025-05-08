@@ -1,0 +1,38 @@
+---
+name: Test Suite
+
+on:
+    push:
+        branches:
+          - "**"
+        paths-ignore:
+          - "docs/**"
+    pull_request:
+        branches: ["main"]
+        paths-ignore:
+          - "docs/**"
+
+jobs:
+
+  tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    env:
+      OS: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        run: uv python install 3.9
+      - name: Install test requirements
+        run: uv run pytest --cov-report xml --cov src
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: pytek-io/smart-connection

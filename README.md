@@ -1,5 +1,6 @@
 [![Coverage](https://codecov.io/gh/pytek-io/async-stream-processing/branch/main/graph/badge.svg)](https://codecov.io/gh/pytek-io/smart-connection)
 [![CI](https://github.com/pytek-io/smart-connection/actions/workflows/ci.yml/badge.svg)](https://github.com/pytek-io/smart-connection/actions)
+[![Test suite](https://github.com/pytek-io/smart-connection/actions/workflows/test-suite.yml/badge.svg)](https://github.com/pytek-io/smart-connection/actions)
 
 # Smart Connection
 
